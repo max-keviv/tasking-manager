@@ -29,7 +29,9 @@ class ExternalSourceReportDTO(Model):
 class ProjectReportDTO(Model):
     project_id = StringType(serialized_name="projectId")
     project_status = StringType(
-        required=True, serialized_name="status", serialize_when_none=False,
+        required=True,
+        serialized_name="status",
+        serialize_when_none=False,
     )
     project_name = StringType(serialized_name="name")
     short_description = StringType(serialized_name="shortDescription", default="")
